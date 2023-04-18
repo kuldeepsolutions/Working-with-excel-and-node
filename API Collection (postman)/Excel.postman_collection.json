@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "f0567eb6-b18e-4641-8e2c-00cbe68f2085",
+		"name": "Excel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23429051"
+	},
+	"item": [
+		{
+			"name": "Export Collection",
+			"item": [
+				{
+					"name": "List collections",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/export/list-collections",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"export",
+								"list-collections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data of any collection",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collectionName\":\"products\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/export/export-data",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"export",
+								"export-data"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "upload excel file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/Test/excel workbook for products.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/products/upload-file",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"upload-file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fileName\": \"D:\\\\Test\\\\Working with excel and node\\\\uploads\\\\excel workbook for products.xlsx\",\r\n    \"sheetName\":\"product\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/products/read-file",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"read-file"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

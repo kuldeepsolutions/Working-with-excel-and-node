@@ -1,0 +1,11 @@
+name,description,category,subCategory,price,discount,HSNCODE,GST,inStock,quantity,SKU,image
+ABC,Hi,pqrst,pqrs,100,,ab-2014,,1,20,,
+ABC2,hello,abcd,pqrs2,120,,bc-1011,,1,20,,
+Abc3,good,sqr,pqrs3,130,,ab-2013,,1,20,,
+Abc4,bad,pqr ,pqrs4,146.6666667,,ac-2022,,1,20,,
+abc5 ,great,mn,pqrs5,161.6666667,,ad-2010,,1,20,,
+abc6,excellent,mno,pqrs6,176.6666667,,io-0101,,1,20,,
+abc7,better,ijk,abcd,191.6666667,,hn-2322,,1,20,,
+abc8,likely,kmn,abcd2,206.6666667,,jn-2329,,1,20,,
+abc9,looking good,lko,abcd3,221.6666667,,nm-8392,,1,20,,
+abc10,fabulous,sgh,abcd4,236.6666667,,bh-1901,,1,20,,
